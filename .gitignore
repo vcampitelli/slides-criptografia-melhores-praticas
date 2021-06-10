@@ -1,0 +1,3 @@
+.idea/
+scripts/symmetric/symmetric.key
+scripts/asymmetric/id_rsa*
