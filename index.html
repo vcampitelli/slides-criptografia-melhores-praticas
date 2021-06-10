@@ -138,30 +138,32 @@
                         </div>
                     </section>
                     <section>
-                        <h2>Criptografia</h2>
-                        <h3>Objetivos principais</h3>
+                        <h3>
+                            <span>Criptografia</span>
+                            Objetivos principais
+                        </h3>
                         <div class="d-flex">
                             <div class="flex-grow">
-                                <h5 class="fragment" data-fragment-index="0">Confidencialidade</h5>
+                                <h6 class="fragment" data-fragment-index="0">Confidencialidade</h6>
                                 <blockquote class="fragment small" data-fragment-index="2">
                                     só o destinatário autorizado deve ser capaz de extrair o conteúdo da mensagem da sua
                                     forma cifrada
                                 </blockquote>
                                 <br>
-                                <h5 class="fragment" data-fragment-index="0">Integridade</h5>
+                                <h6 class="fragment" data-fragment-index="0">Integridade</h6>
                                 <blockquote class="fragment small" data-fragment-index="3">
                                     o destinatário deverá ser capaz de verificar se a mensagem foi alterada durante a
                                     transmissão
                                 </blockquote>
                             </div>
                             <div class="flex-grow">
-                                <h5 class="fragment" data-fragment-index="0">Autenticidade</h5>
+                                <h6 class="fragment" data-fragment-index="0">Autenticidade</h6>
                                 <blockquote class="fragment small" data-fragment-index="4">
                                     o destinatário deverá ser capaz de verificar que se o remetente é realmente quem diz
                                     ser
                                 </blockquote>
                                 <br>
-                                <h5 class="fragment" data-fragment-index="1">Não-repúdio</h5>
+                                <h6 class="fragment" data-fragment-index="1">Não-repúdio</h6>
                                 <blockquote class="fragment small" data-fragment-index="5">
                                     não deverá ser possível ao remetente negar a autoria de sua mensagem
                                 </blockquote>
@@ -177,14 +179,14 @@
 
                 <!-- Criptografia Simétrica -->
                 <section>
-                    <section>
+                    <section data-auto-animate>
                         <h2>Criptografia Simétrica</h2>
                         <p class="fragment">
                             Usa a mesma chave para os dois processos
                         </p>
                         <p class="fragment">Portanto, essa chave deve permanecer <b>secreta</b></p>
                     </section>
-                    <section>
+                    <section data-auto-animate>
                         <h2>Criptografia Simétrica</h2>
                         <div class="d-flex half-columns">
                             <div class="fragment">
@@ -197,39 +199,31 @@
                             </div>
                         </div>
                     </section>
-                    <section data-auto-animate>
-                        <h2>Criptografia Simétrica</h2>
-                        <h4>Cifras de Bloco</h4>
-                        <p>Algoritmos mais comuns</p>
-                        <ul>
-                            <li>
-                                <b>Blowfish</b><span class="smaller">, mas deve-se usar os algoritmos relacionados
-                                Twofish and Threefish, por serem mais seguros</span> <br>&nbsp;
-                            </li>
-                        </ul>
-                    </section>
-                    <section data-auto-animate>
-                        <h2>Criptografia Simétrica</h2>
-                        <h4>Cifras de Bloco</h4>
-                        <p>Algoritmos mais comuns</p>
-                        <ul>
-                            <li>
-                                <b>DES</b> <em>(Data Encryption Standard)</em><span class="smaller">, que não deve ser
-                                usado mais (e nem o seu successor Triple DES)</span> <br>&nbsp;
-                            </li>
-                        </ul>
-                    </section>
-                    <section data-auto-animate>
-                        <h2>Criptografia Simétrica</h2>
-                        <h4>Cifras de Bloco</h4>
-                        <p>Algoritmos mais comuns</p>
-                        <ul>
-                            <li>
-                                <b>AES</b> <em>(Advanced Encryption Standard)</em><span class="smaller">, também
+                    <section>
+                        <h5>
+                            <span>Criptografia Simétrica &#8250; Cifras de Bloco</span>
+                            Algoritmos mais comuns
+                        </h5>
+                        <div class="d-flex half-columns line-height-1 my-2">
+                            <div class="fragment">
+                                Blowfish<br>
+                                <span class="small">deve-se usar os algoritmos relacionados
+                                Twofish and Threefish, por serem mais seguros</span>
+                            </div>
+                            <div class="fragment">
+                                DES<br><em class="small">Data Encryption Standard</em><br>
+                                <span class="small">que não deve ser
+                                usado mais (e nem o seu successor Triple DES)</span>
+                            </div>
+                        </div>
+                        <div class="d-flex half-columns line-height-1 justify-content-center">
+                            <div class="fragment">
+                                AES<br><em class="small">Advanced Encryption Standard</em><br>
+                                <span class="small">também
                                 conhecido pelo seu nome original Rijndael, foi aprovado pelo NSA para encriptar
                                 informações confidenciais e é o mais recomendado</span>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </section>
                     <section data-auto-animate>
                         <h5>
@@ -245,7 +239,7 @@
                         </h5>
                         <p>
                             O <b>Vetor de Inicialização (IV)</b> é um valor aleatório responsável por oferecer o estado
-                            inicial ao algoritmo e <b>não pode</b> ser reutilizado ou previsível
+                            inicial ao algoritmo e não pode ser reutilizado ou previsível
                         </p>
                     </section>
                     <section data-auto-animate>
@@ -362,17 +356,22 @@
                             Cifras de Fluxo
                         </h4>
                         <p>Indicadas quando não se sabe o tamanho do dado</p>
-                        <ul>
-                            <li>
-                                A5/1<span class="fragment smaller">, usada no padrão GSM para comunicação móvel</span>
-                            </li>
-                            <li>
-                                RC4<span class="fragment smaller">, usada no protocolo WEP para redes wireless</span>
-                            </li>
-                            <li>
-                                ChaCha<span class="fragment smaller">, a mais recomendada para uso hoje em dia</span>
-                            </li>
-                        </ul>
+                        <div class="d-flex half-columns line-height-1 my-2">
+                            <div class="fragment">
+                                A5/1<br>
+                                <span class="small">usada no padrão GSM para comunicação móvel</span>
+                            </div>
+                            <div class="fragment">
+                                RC4<br>
+                                <span class="small">usada no protocolo WEP para redes wireless</span>
+                            </div>
+                        </div>
+                        <div class="d-flex half-columns line-height-1 justify-content-center">
+                            <div class="fragment">
+                                ChaCha<br>
+                                <span class="small">a mais recomendada para uso hoje em dia</span>
+                            </div>
+                        </div>
                     </section>
 
                     <section data-auto-animate>
@@ -488,7 +487,7 @@
                             <div>
                                 <h5>Chave Privada</h5>
                                 <p class="fragment" data-fragment-index="0">
-                                    Usada para você para escrever textos<br>
+                                    Usada para você para escrever textos<br><br>
                                 </p>
                                 <p class="fragment" data-fragment-index="2">
                                     &darr;<br>
@@ -543,7 +542,7 @@
                         </p>
                     </section>
 
-                    <section>
+                    <section data-auto-animate data-auto-animate-restart>
                         <h4>
                             <span>Criptografia Assimétrica</span>
                             Abordagem híbrida
@@ -554,8 +553,14 @@
                                 (como no RSA, que com chaves de 2048 bits só permite cifrar blocos de até 214 bytes)
                             </em> e por serem mais lentos na maioria dos casos, o que geralmente acontece é:
                         </p>
+                    </section>
+                    <section data-auto-animate>
+                        <h4>
+                            <span>Criptografia Assimétrica</span>
+                            Abordagem híbrida
+                        </h4>
                         <ol>
-                            <li class="fragment">
+                            <li>
                                 É gerada uma chave secreta <em class="smaller">(aleatória e única para a sessão)</em>;
                             </li>
                             <li class="fragment">
@@ -722,14 +727,14 @@
                         <h2>Timing Attacks</h2>
                         <p>Será que não estamos exagerando?<br>É realmente possível ver essa diferença?</p><br>
                     </section>
-                    <section data-auto-animate>
-                        <h2><span>Timing Attacks</span></h2>
+                    <section>
+                        <h3>Timing Attacks</h3>
                         <video controls>
                             <source src="img/login-user-enumeration.mp4">
                         </video>
                     </section>
                     <section>
-                        <h3><span>Timing Attacks</span></h3>
+                        <h3>Timing Attacks</h3>
                         <pre><code class="javascript" data-line-numbers data-trim>
                             function login(username, password) {
                                 const user = this.findByUsername(username);
@@ -752,25 +757,24 @@
                             <span>Timing Attacks</span>
                             Hashing
                         </h3>
-                        <p class="fragment">
-                            Exercício: imagine que você precise criar um algoritmo para comparar duas <em>strings</em>
+                        <p class="fragment smaller">
+                            Exercício: criar um algoritmo para comparar duas <em>strings</em>
                         </p>
-                        <ol>
+                        <ol class="margin">
                             <li class="fragment">
-                                A primeira coisa que você provavelmente faria seria comparar o tamanho delas
+                                A primeira coisa é comparar o tamanho delas
                             </li>
                             <li class="fragment">
-                                Se os tamanhos forem diferentes, o processamento já para
+                                Se os tamanhos forem diferentes, retorna <code>false</code>
                             </li>
                             <li class="fragment">
                                 Se forem iguais, você irá comparar letra por letra
                             </li>
                             <li class="fragment">
-                                Assim que houver uma letra diferente entre as <em>strings</em>, sua função retorna
-                                <code>false</code>
+                                Assim que houver uma letra diferente, retorna <code>false</code>
                             </li>
                             <li class="fragment">
-                                Se chegou até o final da comparação, sua função irá retornar <code>true</code>
+                                Se chegou até o final da comparação, retorna <code>true</code>
                             </li>
                         </ol>
                     </section>
@@ -779,12 +783,13 @@
                             <span>Timing Attacks</span>
                             Hashing
                         </h3>
-                        <p>
-                            Exercício: imagine que você precise criar um algoritmo para comparar duas <em>strings</em>
+                        <p class="smaller">
+                            Exercício: criar um algoritmo para comparar duas <em>strings</em>
                         </p>
-                        <p class="fragment">
+                        <p class="fragment my-3">
                             Cada uma das comparações do item <em>4.</em> irá levar um certo tempo, que chamaremos de
-                            <code>1u</code>
+                            <code>1u</code><br>
+                            <em class="smaller">(que provavelmente serão alguns milésimos de segundo)</em>
                         </p>
                     </section>
                     <section data-auto-animate data-auto-animate-restart>
@@ -877,6 +882,7 @@
                         </h3>
                         <p>Use comparações de tempo constante entre <em>hashes</em></p>
                         <pre><code class="php" data-trim>
+                            // Ao invés de if ($hash1 === $hash2) {
                             if (hash_equals($hash1, $hash2)) {
                                 // ...
                             }
@@ -895,6 +901,7 @@
                             const buffer1 = Buffer.from('hash1');
                             const buffer2 = Buffer.from('hash2');
 
+                            // Ao invés de if (buffer1.equals(buffer2)) {
                             let check = false;
                             try {
                                 check = timingSafeEqual(buffer1, buffer2);
@@ -920,12 +927,6 @@
                             <li class="fragment">bcrypt</li>
                             <li class="fragment">PBKDF2</li>
                         </ol>
-
-                        <br>
-                        <a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
-                           target="_blank" rel="noopener" class="fragment small">
-                            Password Storage Cheat Sheet
-                        </a>
                     </section>
                     <section>
                         <h3>
@@ -975,6 +976,30 @@
                             Node.js <span class="smaller">(pacote argon2)</span>
                         </a>
                     </section>
+                    <section>
+                        <h3>
+                            <span>Armazenamento de Senhas</span>
+                            Bibliotecas e leitura
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
+                                   target="_blank" rel="noopener">
+                                    Password Storage Cheat Sheet
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://crackstation.net/hashing-security.htm" target="_blank" rel="noopener">
+                                    Secure Salted Password Hashing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/defuse/password-hashing" target="_blank" rel="noopener">
+                                    <code>defuse/password-hashing</code>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
                 </section>
                 <!-- Armazenamento de Senhas -->
 
@@ -986,7 +1011,7 @@
                         </h3>
                         <ul class="no-padding">
                             <li>
-                                Multi-platforma e recomendado: <a href="https://doc.libsodium.org/" target="_blank" rel="noopener">
+                                Multi-platforma e recomendada: <a href="https://doc.libsodium.org/" target="_blank" rel="noopener">
                                     libsodium
                                 </a>
                             </li>
@@ -1173,10 +1198,12 @@
 
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/highlight/highlight.js"></script>
+        <script src="reveal.js/plugin/notes/notes.js"></script>
         <script>
             Reveal.initialize({
                 hash: true,
-                plugins: [RevealHighlight]
+                margin: 0.08,
+                plugins: [RevealHighlight, RevealNotes]
             });
         </script>
     </body>
