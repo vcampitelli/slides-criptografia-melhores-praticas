@@ -56,7 +56,6 @@ section > h6:first-child {
   color: #838383;
 }
 .reveal .slides {
-  background: #fff;
   letter-spacing: var(--r-heading-letter-spacing);
   overflow: hidden;
   text-align: left;
@@ -161,6 +160,9 @@ div.one-third {
 blockquote.small {
   font-size: 0.7em;
 }
+.smallish {
+  font-size: 0.9em;
+}
 .small {
   font-size: 0.6em;
 }
@@ -198,6 +200,9 @@ blockquote.small {
 .my-2 {
   margin-top: 2em !important;
   margin-bottom: 2em !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 .mb-1 {
   margin-bottom: 1em !important;
