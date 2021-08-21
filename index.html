@@ -10,9 +10,10 @@
         <link rel="stylesheet" href="reveal.js/dist/reveal.css">
         <link rel="stylesheet" href="reveal.js/dist/theme/white.css">
         <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/github-dark-dimmed.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.css?d=20210821">
     </head>
     <body>
         <div class="reveal">
@@ -20,7 +21,7 @@
                 <section>
                     <h1>Melhores práticas de criptografia</h1>
                     <h6 class="smaller">
-                        <a href="https://twitter.com/vcampitelli" target="_blank" rel="noopener" class="text-orange">
+                        <a href="https://twitter.com/vcampitelli" target="_blank" rel="noopener">
                             @vcampitelli
                         </a>
                     </h6>
@@ -32,7 +33,7 @@
                         <h2>Sobre mim</h2>
                         <div class="d-flex align-items-center">
                             <div class="mr-1">
-                                <img src="img/profile.png" alt="Vinícius Campitelli" id="profile-pic">
+                                <img src="img/profile.jpg" alt="Vinícius Campitelli" id="profile-pic">
                                 <h4>Vinícius Campitelli</h4>
                             </div>
                             <ul>
@@ -44,7 +45,7 @@
                                     <a href="https://ottera.tv" target="_blank" rel="noopener">OTTera</a>
                                 </li>
                                 <li>Entusiasta em cibersegurança</li>
-                                <li>Desenvolvedor PHP há mais de 10 anos</li>
+                                <li>Desenvolvedor há mais de 10 anos</li>
                             </ul>
                         </div>
                     </section>
@@ -94,7 +95,7 @@
 
                 <!-- Criptografia é -->
                 <section>
-                    <section data-auto-animate>
+                    <section data-auto-animate data-auto-animate-restart>
                         <h2>Criptografia é...</h2>
                         <blockquote class="fragment">
                             a prática e o estudo de técnicas para comunicação segura na presença de terceiros
@@ -110,7 +111,7 @@
                     <section data-auto-animate>
                         <h2>Criptografia é...</h2>
                         <div class="d-flex align-start">
-                            <div class="block fragment flex-grow" data-fragment-index="0">
+                            <div class="block fragment flex-grow text-center" data-fragment-index="0">
                                 Texto plano
                             </div>
                             <div id="flow-cipher" class="fragment flex-grow" data-fragment-index="1">
@@ -267,11 +268,13 @@
                             <img class="fragment" src="img/ecb_original.jpg" style="max-height: 500px"
                                  data-fragment-index="1">
                         </div>
-                        <a href="https://www.pngpix.com/download/giraffe-png-transparent-image" target="_blank"
-                           rel="noopener"
-                           class="fragment smallest" data-fragment-index="1">
-                            pngpix.com
-                        </a>
+                        <div class="text-center mb-0">
+                            <a href="https://www.pngpix.com/download/giraffe-png-transparent-image" target="_blank"
+                               rel="noopener"
+                               class="fragment smallest" data-fragment-index="1">
+                                pngpix.com
+                            </a>
+                        </div>
                     </section>
                     <section>
                         <h6>
@@ -436,7 +439,7 @@
                         <p class="fragment mb-1" data-fragment-index="0">
                             Utiliza duas chaves, sendo cada uma responsável por um dos processos
                         </p>
-                        <div class="d-flex half-columns">
+                        <div class="d-flex half-columns text-center">
                             <div>
                                 <h5 class="fragment" data-fragment-index="1">Chave Pública</h5>
                                 <p class="fragment" data-fragment-index="3">Pode ser distribuída para outros</p>
@@ -451,7 +454,7 @@
                     <section data-auto-animate>
                         <h2>Criptografia Assimétrica</h2>
                         <p class="mb-1">Se você quer que terceiros se comuniquem com você...</p>
-                        <div class="d-flex half-columns">
+                        <div class="d-flex half-columns text-center">
                             <div>
                                 <h5>Chave Pública</h5>
                                 <p class="fragment" data-fragment-index="0">Usada por eles para escrevem para você</p>
@@ -473,7 +476,7 @@
                     <section data-auto-animate>
                         <h2>Criptografia Assimétrica</h2>
                         <p class="mb-1">Se você quiser se comunicar com outros...</p>
-                        <div class="d-flex half-columns">
+                        <div class="d-flex half-columns text-center">
                             <div>
                                 <h5>Chave Pública</h5>
                                 <p class="fragment" data-fragment-index="1">
@@ -487,7 +490,7 @@
                             <div>
                                 <h5>Chave Privada</h5>
                                 <p class="fragment" data-fragment-index="0">
-                                    Usada para você para escrever textos<br><br>
+                                    Usada por você para escrever textos
                                 </p>
                                 <p class="fragment" data-fragment-index="2">
                                     &darr;<br>
@@ -522,7 +525,7 @@
                             Mas como pode uma chave ser usada para ler e outra para escrever?
                         </h4>
                         <p>
-                            Outros algoritmos <em>(como ED25519)</em> são baseados em curvas elípticas, que são pontos
+                            Outros algoritmos <em>(como ED25519)</em> são baseados em curvas elípticas: pontos
                             gerados por equações cúbicas como <code>y² = x³ + ax + b</code>
                         </p>
                         <p>Nesses casos, o cálculo do logaritmo discreto ainda é muito custoso computacionalmente</p>
@@ -559,7 +562,7 @@
                             <span>Criptografia Assimétrica</span>
                             Abordagem híbrida
                         </h4>
-                        <ol>
+                        <ol class="margin">
                             <li>
                                 É gerada uma chave secreta <em class="smaller">(aleatória e única para a sessão)</em>;
                             </li>
@@ -572,7 +575,7 @@
                         </ol>
                     </section>
 
-                    <section data-auto-animate>
+                    <section data-auto-animate data-auto-animate-restart>
                         <h4>
                             <span>Criptografia Assimétrica</span>
                             Exemplo - RSA
@@ -786,7 +789,7 @@
                         <p class="smaller">
                             Exercício: criar um algoritmo para comparar duas <em>strings</em>
                         </p>
-                        <p class="fragment my-3">
+                        <p class="my-2">
                             Cada uma das comparações do item <em>4.</em> irá levar um certo tempo, que chamaremos de
                             <code>1u</code><br>
                             <em class="smaller">(que provavelmente serão alguns milésimos de segundo)</em>
